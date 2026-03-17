@@ -97,18 +97,18 @@
     .pill { font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-muted); border: 1px solid var(--rule); padding: 5px 13px; font-style: italic; white-space: nowrap; }
 
     .contact { background: var(--ink); color: var(--white); }
-    .contact .label { color: rgba(255,255,255,0.3); }
+    .contact .label { color: rgba(255,255,255,0.55); }
     .contact .label::after { background: rgba(255,255,255,0.08); }
     .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6vw; align-items: start; }
     .contact-heading { font-family: 'DM Serif Display', serif; font-size: clamp(2rem, 4.5vw, 3.5rem); line-height: 1.1; }
     .contact-heading em { font-style: italic; color: var(--mint); }
     .c-detail { margin-bottom: 2.2rem; }
-    .c-lbl { font-size: 0.68rem; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.3); margin-bottom: 0.4rem; }
+    .c-lbl { font-size: 0.68rem; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.55); margin-bottom: 0.4rem; }
     .c-val { font-size: 0.97rem; color: var(--white); font-weight: 300; }
     .c-val a { color: var(--mint); text-decoration: none; border-bottom: 1px solid rgba(204,232,196,0.2); padding-bottom: 2px; transition: border-color 0.2s; }
     .c-val a:hover { border-color: var(--mint); }
-    .c-note { font-size: 0.82rem; color: rgba(255,255,255,0.28); font-weight: 300; line-height: 1.65; max-width: 360px; }
-    footer { background: var(--ink); border-top: 1px solid rgba(255,255,255,0.06); padding: 1.75rem 5vw; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; color: rgba(255,255,255,0.22); font-size: 0.74rem; letter-spacing: 0.05em; }
+    .c-note { font-size: 0.82rem; color: rgba(255,255,255,0.55); font-weight: 300; line-height: 1.65; max-width: 360px; }
+    footer { background: var(--ink); border-top: 1px solid rgba(255,255,255,0.06); padding: 1.75rem 5vw; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; color: rgba(255,255,255,0.45); font-size: 0.74rem; letter-spacing: 0.05em; }
 
     @keyframes fadeUp { from { opacity:0; transform:translateY(20px); } to { opacity:1; transform:translateY(0); } }
     .hero-eyebrow  { animation: fadeUp 0.55s 0.05s ease both; }
@@ -340,11 +340,7 @@
     <div>
       <div class="c-detail">
         <p class="c-lbl">Email</p>
-        <p class="c-val"><a href="mailto:kwrobleski@gmail.com">kwrobleski@gmail.com</a></p>
-      </div>
-      <div class="c-detail">
-        <p class="c-lbl">Phone</p>
-        <p class="c-val"><a href="tel:2162001085">216-200-1085</a></p>
+        <p class="c-val"><a href="/cdn-cgi/l/email-protection#254e52574a474940564e4c654248444c490b464a48"><span class="__cf_email__" data-cfemail="157e62677a777970667e7c557278747c793b767a78">[email&#160;protected]</span></a></p>
       </div>
       <div class="c-detail">
         <p class="c-lbl">LinkedIn</p>
@@ -364,17 +360,9 @@
   <span>cat.wcgroups.com</span>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   document.getElementById('cs-tabs').addEventListener('click', function(e) {
     const tab = e.target.closest('.cs-tab');
     if (!tab) return;
     const key = tab.dataset.tab;
-    document.querySelectorAll('.cs-tab').forEach(t => t.classList.remove('active'));
-    document.querySelectorAll('.p-panel').forEach(p => p.classList.remove('active'));
-    tab.classList.add('active');
-    document.getElementById('tab-' + key).classList.add('active');
-  });
-</script>
-
-</body>
-</html>
+    document.querySelectorAll('.cs-tab').forEach(t => t.cla
