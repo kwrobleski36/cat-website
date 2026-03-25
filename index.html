@@ -163,7 +163,7 @@
   <div class="cs-tabs" id="cs-tabs">
     <div class="cs-tab active" data-tab="scheduler">Scheduler</div>
     <div class="cs-tab" data-tab="crm">CRM</div>
-    <div class="cs-tab" data-tab="ops">Inventory</div>
+    <div class="cs-tab" data-tab="ops">Reports</div>
   </div>
   <div class="p-card">
     <div class="p-card-head">
@@ -180,7 +180,7 @@
         <div class="p-col"><p class="col-lbl">What was built</p><ul class="col-body"><li>Real-time calendar with color-coded job types</li><li>Employee assignment and field crew visibility</li><li>Role-based access from field to management</li></ul></div>
         <div class="p-col"><p class="col-lbl">The result</p><p class="col-body">The calendar became the company's single source of truth — replacing the patchwork entirely. Any administrator can manage it without touching code.</p></div>
       </div>
-      <div class="p-screenshot"><img src="ss_calendar.jpg" alt="CAT Platform — Real-time scheduling calendar" loading="lazy" /><p class="p-screenshot-label">Live platform — real-time calendar with color-coded job types</p></div>
+      <div class="p-screenshot"><img src="ss_calendar_blurred.png" alt="CAT Platform — Real-time scheduling calendar" loading="lazy" /><p class="p-screenshot-label">Live platform — real-time calendar with color-coded job types &nbsp;·&nbsp; <em>Sensitive information blurred</em></p></div>
     </div>
     <div class="p-panel" id="tab-crm">
       <div class="p-cols">
@@ -188,15 +188,15 @@
         <div class="p-col"><p class="col-lbl">What was built</p><ul class="col-body"><li>Full CRM with staged pipeline and lead detail views</li><li>SOP-driven workflow from first touch to close</li><li>Activity tracking, task management, and file storage</li></ul></div>
         <div class="p-col"><p class="col-lbl">The result</p><p class="col-body">Sales moved from informal and reactive to structured and repeatable. The same CRM that was built is the one actively used to manage the pipeline today.</p></div>
       </div>
-      <div class="p-screenshot"><img src="ss_crm.jpg" alt="CAT Platform — CRM lead detail" loading="lazy" /><p class="p-screenshot-label">Live platform — CRM lead detail with activity timeline and stage tracking</p></div>
+      <div class="p-screenshot"><img src="ss_crm_blurred.png" alt="CAT Platform — CRM customer view" loading="lazy" /><p class="p-screenshot-label">Live platform — CRM customer list with pipeline status and contact tracking &nbsp;·&nbsp; <em>Sensitive information blurred</em></p></div>
     </div>
     <div class="p-panel" id="tab-ops">
       <div class="p-cols">
-        <div class="p-col"><p class="col-lbl">The problem</p><p class="col-body">Equipment staging was manual and error-prone. Supply inventory had no automated awareness — items were over-purchased or missing.</p></div>
-        <div class="p-col"><p class="col-lbl">What was built</p><ul class="col-body"><li>Equipment database with job-specific automated staging</li><li>Inventory tracking across 50+ line items</li><li>Shared data layer with scheduler and CRM</li></ul></div>
-        <div class="p-col"><p class="col-lbl">The result</p><p class="col-body">Manual prep coordination was eliminated. Over-purchasing stopped. Because every module shares the same data layer, adding inventory required no rearchitecting.</p></div>
+        <div class="p-col"><p class="col-lbl">The problem</p><p class="col-body">No visibility into operational performance over time. Management had no way to measure crew productivity, job volume trends, or time-off patterns — all decisions were made from instinct, not data.</p></div>
+        <div class="p-col"><p class="col-lbl">What was built</p><ul class="col-body"><li>Configurable reporting engine across custom date ranges</li><li>KPI dashboard: jobs/crew, avg hours, volume trends</li><li>Crew utilization and time-off &amp; attendance sections</li><li>Printable report output for management review</li></ul></div>
+        <div class="p-col"><p class="col-lbl">The result</p><p class="col-body">Management gained a real-time view of operational performance for the first time. Reports are generated on demand and draw from live platform data — no manual compilation required.</p></div>
       </div>
-      <div class="p-screenshot"><img src="ss_createjob.jpg" alt="CAT Platform — Job creation form" loading="lazy" /><p class="p-screenshot-label">Live platform — job creation with type classification and crew assignment</p></div>
+      <div class="p-screenshot"><img src="ss_reports_blurred.png" alt="CAT Platform — Operations Report" loading="lazy" /><p class="p-screenshot-label">Live platform — operations report with productivity KPIs and 6-month trend data &nbsp;·&nbsp; <em>Sensitive information blurred</em></p></div>
     </div>
   </div>
 </section>
@@ -206,7 +206,7 @@
   <div class="contact-grid">
     <h2 class="contact-heading">Have a problem<br/>worth <em>solving?</em></h2>
     <div>
-      <div class="c-detail"><p class="c-lbl">Email</p><p class="c-val"><a href="mailto:kwrobleski@gmail.com">kwrobleski@gmail.com</a></p></div>
+      <div class="c-detail"><p class="c-lbl">Email</p><p class="c-val"><a href="/cdn-cgi/l/email-protection#fe95898c919c929b8d9597be99939f9792d09d9193"><span class="__cf_email__" data-cfemail="bdd6cacfd2dfd1d8ced6d4fddad0dcd4d193ded2d0">[email&#160;protected]</span></a></p></div>
       <div class="c-detail"><p class="c-lbl">LinkedIn</p><p class="c-val"><a href="https://linkedin.com/in/kevin-wrobleski-506563236" target="_blank" rel="noopener">linkedin.com/in/kevin-wrobleski</a></p></div>
       <div class="c-detail"><p class="c-lbl">Portfolio</p><p class="c-val"><a href="https://cat.wcgroups.com" target="_blank" rel="noopener">cat.wcgroups.com</a></p></div>
       <p class="c-note">I typically respond within one business day. If you have a specific system, workflow, or acquisition problem in mind, mention it — it helps me come to the first conversation prepared.</p>
@@ -219,17 +219,9 @@
   <span>cat.wcgroups.com</span>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   document.getElementById('cs-tabs').addEventListener('click', function(e) {
     const tab = e.target.closest('.cs-tab');
     if (!tab) return;
     const key = tab.dataset.tab;
-    document.querySelectorAll('.cs-tab').forEach(t => t.classList.remove('active'));
-    tab.classList.add('active');
-    document.querySelectorAll('.p-panel').forEach(p => p.classList.remove('active'));
-    document.getElementById('tab-' + key).classList.add('active');
-  });
-</script>
-
-</body>
-</html>
+    document.querySelectorAll('.cs-tab').forEach(t => t.cla
